@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<title>Insert title here</title>
+<link href="cart.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="navigate">
+		<a href="listCart.jsp">购物车</a>
+		<a href="index.jsp">首页</a>
+	</div>
+	<center>
+		<form action="addProduct" method="post">
+		
+			<table>
+				<tr>
+					<td align="right">产品编号</td>
+					<td align="left"><input type="text" name="pid"/></td>
+				</tr>
+				<tr>
+					<td align="right">产品名称</td>
+					<td align="left"><input type="text" name="name"/></td>
+				</tr>
+				<tr>
+					<td align="right">数量</td>
+					<td align="left"><input type="text" name="nums"/></td>
+				</tr>
+				<tr>
+					<td align="right">单价</td>
+					<td align="left"><input type="text" name="price"/></td>
+				</tr>
+				<tr>
+					<td align="right">是否促销</td>
+					<td align="left">
+						<input type="radio" name="sale" value="1"/>是
+						<input type="radio" name="sale" value="0"/>否
+					</td>
+				</tr>
+				<tr>
+					<td align="right">供货商</td>
+					<td align="left">
+						<textarea name="provider" rows="4" cols="20"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">
+						<input type="submit" value="入库"/>
+						<input type="reset" value="清空"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>

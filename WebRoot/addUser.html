@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<script src="js/login.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body >
+<form action="addUser.jsp" method="post" onsubmit="return checkform();">
+<div class="login">
+	
+	<div class="login-top">
+		<h1>欢迎注册</h1>
+		<form>
+			<input type="text" name="addname"  id="username"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+			<input type="text" name="addpassword" id="password"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+	    </form>
+	    <div class="forgot">
+	    	
+	    	<input type="submit" value="免费注册" >
+	    </div>
+		</div>
+	<div class="login-bottom">
+		<h3>已账号？ &nbsp;<a href="login.html">马上登录</a> </h3>
+	</div>
+</div>	
+<div class="copyright">
+	
+</div>
+</form>
+<script>
+function checkform()
+{
+if(document.getElementById('username').value=='')
+{
+alert('用户名不能为空');
+return false;
+}
+if(document.getElementById('password').value=='')
+{
+alert('密码不能为空！');
+return false;
+}
+}
+</script>
+
+</body>
+</html>
